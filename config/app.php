@@ -161,6 +161,9 @@ return [
          */
         Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
 
+        //Laravel Socialite
+        Laravel\Socialite\SocialiteServiceProvider::class,
+
         # Providers installed below are installed by acacha llum:
         # https://github.com/acacha/llum
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
@@ -217,6 +220,8 @@ return [
          * Acacha AdminLTE template alias
          */
         'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
+
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
         # Alias installed below are installed by acacha llum:
         # https://github.com/acacha/llum

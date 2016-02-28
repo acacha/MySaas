@@ -27,5 +27,6 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    Route::get('auth/github', 'Auth\AuthController@redirectToGithubProvider');
+    Route::get('auth/github/callback', 'Auth\AuthController@handleGithubProviderCallback');
 });
