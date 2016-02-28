@@ -5,4 +5,4 @@ MySaas
 
 # Docs
 
- http://acacha.org/mediawiki/MySaaS#.VtLJrXXhCkA
+ http://acacha.org/mediawiki/MySaaS
