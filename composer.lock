@@ -4,9 +4,61 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "33d83a5c3bcd0c2dd05d6efd5388f104",
-    "content-hash": "abf479f3b3aebeddb54a77f8f98e9b83",
+    "hash": "de301cc7d42be6c7fe483227084e3372",
+    "content-hash": "340486f0f0950053045a0cce946ea25e",
     "packages": [
+        {
+            "name": "acacha/admin-lte-template-laravel",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acacha/adminlte-laravel.git",
+                "reference": "7059b41f08cc3addbc79260ebb926aaa7e803cb2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/acacha/adminlte-laravel/zipball/7059b41f08cc3addbc79260ebb926aaa7e803cb2",
+                "reference": "7059b41f08cc3addbc79260ebb926aaa7e803cb2",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Acacha\\AdminLTETemplateLaravel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergi Tur Badenas",
+                    "email": "sergiturbadenas@gmail.com",
+                    "homepage": "http://acacha.org"
+                }
+            ],
+            "description": "AdminLTE template applied to Laravel Scaffolding",
+            "keywords": [
+                "AdminLTE",
+                "admin",
+                "admin-lte",
+                "administrator",
+                "bootstrap",
+                "laravel",
+                "template",
+                "theme"
+            ],
+            "time": "2016-02-28 10:48:15"
+        },
         {
             "name": "barryvdh/laravel-debugbar",
             "version": "v2.2.0",
