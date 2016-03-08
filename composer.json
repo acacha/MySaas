@@ -10,7 +10,10 @@
         "barryvdh/laravel-ide-helper": "^2.1",
         "barryvdh/laravel-debugbar": "^2.2",
         "acacha/admin-lte-template-laravel": "^2.0",
-        "laravel/socialite": "^2.0"
+        "laravel/socialite": "^2.0",
+        "adamwathan/eloquent-oauth-l5": "^0.4.2",
+        "laravel/cashier": "~6.0",
+        "doctrine/dbal": "^2.5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

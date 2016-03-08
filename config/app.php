@@ -164,6 +164,9 @@ return [
         //Laravel Socialite
         Laravel\Socialite\SocialiteServiceProvider::class,
 
+        Laravel\Cashier\CashierServiceProvider::class,
+
+
         # Providers installed below are installed by acacha llum:
         # https://github.com/acacha/llum
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
