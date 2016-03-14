@@ -11,7 +11,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\User::class, 50)->create()->each(
+        factory(\App\User::class, 50000)->create()->each(
             function($user) {
                 $user->subscriptions()->save(
                     factory(\Laravel\Cashier\Subscription::class, 1)->make()

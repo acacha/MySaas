@@ -38,6 +38,8 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::post('registerAndSubscribeToStripe', 'Auth\AuthController@registerAndSubscribeToStripe');
 
+    Route::get('reports/dailySales','ReportsController@dailySales');
+
     Route::get('test',function(){
         $subscriptions = \Laravel\Cashier\Subscription::all();
 
