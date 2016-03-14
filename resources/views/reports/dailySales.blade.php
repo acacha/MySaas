@@ -26,7 +26,7 @@
             }
             ]
         }
-        var myBarChart = new Chart(ctx).Area(data);
+        var myBarChart = new Chart(ctx).Bar(data);
 
     </script>
 @endsection
