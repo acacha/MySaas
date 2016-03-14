@@ -15,10 +15,10 @@
 
         var ctx = document.getElementById("barChartDailySales").getContext("2d");
         var data = {
-            labels: ["Day", "Day3", "March", "April", "May", "June", "July"],
+            labels: {!! json_encode($days) !!},
             datasets: [ {
-                data: [950,1589,1589,2500,3400,456,300],
-                label: "My First dataset",
+                data: {!! json_encode($totals) !!},
+                label: "Daily Sales",
                 fillColor: "rgba(220,220,220,0.5)",
                 strokeColor: "rgba(220,220,220,0.8)",
                 highlightFill: "rgba(220,220,220,0.75)",
@@ -30,6 +30,8 @@
 
     </script>
 @endsection
+
+{{ json_encode($days) }} || {{ json_encode($totals) }}
 
 @section('custom_css')
     <link href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
@@ -63,14 +65,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Day 1</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Day 2</td>
-                                    <td>15</td>
-                                </tr>
+                                @foreach($totals as $index => $total)
+                                    <tr>
+                                        <td> {{$days[$index]}}</td>
+                                        <td> {{$total}}</td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
