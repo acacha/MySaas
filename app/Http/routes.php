@@ -27,6 +27,10 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
+    Route::get('downloadInvoice','PDFController@downloadInvoice');
+    Route::get('invoiceHtml
+
+    ','PDFController@invoiceHtml');
     Route::get('auth/{provider}', 'Auth\AuthController@redirectToAuthenticationServiceProvider');
     Route::get('auth/{provider}/callback', 'Auth\AuthController@handleAuthenticationServiceProviderCallback');
 
