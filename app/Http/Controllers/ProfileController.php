@@ -13,6 +13,15 @@ use App\Http\Requests;
 class ProfileController extends Controller
 {
 
+    public function preShow() {
+        if ($json) {
+            return show(CreadorDePerfilesjson());
+        } else {
+            return show(CreadorDePerfilesHTML());
+        }
+
+    }
+
     public function show(Profile $profile)
     {
         return $profile->show(Auth::user());
