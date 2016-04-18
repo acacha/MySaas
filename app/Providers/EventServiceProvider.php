@@ -13,14 +13,11 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'App\Events\SomeEvent' => [
-            'App\Listeners\EventListener',
-        ],
         'App\Events\UserLogged' => [
             'App\Listeners\UserUpdateLastLogin',
         ],
-        'App\Events\UserHasChanged' => [
-            'App\Listeners\UserCacheForget',
+        \App\Events\UserHasChanged::class => [
+            \App\Listeners\UserCacheForget::class,
         ],
     ];
 

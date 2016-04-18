@@ -27,4 +27,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function profile($creadorDePerfiles) {
+        return $creadorDePerfiles->show($this);
+
+//        return "<div>
+//                Id: <b> " . $this->id . "</b><br/>
+//                Name: " . $this->name . "
+//                </div>";
+    }
+
 }
