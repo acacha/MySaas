@@ -28,6 +28,9 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['web']], function () {
 
+
+    Route::get('shotout','ShotOutController@shotout');
+
     Route::get('profile','ProfileController@show');
 
 //    Event::listen('user.change',function() {

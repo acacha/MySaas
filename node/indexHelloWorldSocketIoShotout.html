@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Testing hola
+
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+
+
+<script>
+
+    var socket = io('http://localhost:3000');
+
+    io.on('connection',function(socket) {
+        socket.on('shoutout-added', function () {
+            notifyUser();
+        });
+    });
+
+    //var channel = pusher.subscribe('shoutout-added');
+    //channel.bind('App\\Events\\ShoutoutAdded', notifyUser);
+
+//    socket.emit('hello');
+//    socket.emit('bye');
+//    socket.emit('off');
+
+</script>
+
+</body>
+</html>
